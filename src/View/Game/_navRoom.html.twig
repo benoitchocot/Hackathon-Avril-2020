@@ -1,0 +1,18 @@
+<ul class="nav flex-column">
+    <li>{{ login_name }}, your are currently in the room number {{ roomNumber }}. </li>
+    <li>You may choose to go to rooms :</li>
+
+        <div class="buttonsPad">
+            {% for room in accessibleRooms %}
+                <li class="nav-item">
+                    <a class="nav-link a-clue" href="/./Game/index/{{ room }}">{{ room }}</a>
+                    <img class="image map-clue" src="/./assets/images/map{{ room }}.png" alt="{{ room }}.png">
+                </li>
+            {% endfor %}
+        </div>
+
+    {% if target is empty %}
+    {% else %}
+        <p class="status">You are trying to find the object <img src="{{ target }}" class="pocket" ></p>
+    {% endif %}
+</ul>

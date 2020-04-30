@@ -1,0 +1,12 @@
+
+{% if pocket is empty %}
+    <p class="status">You are trying to find the object</p>
+{%  else %}
+    <p  class="status">You got it in your pocket :<img src="{{ pocket }}" class="pocket" > Find the exit now.</p><br>
+{% endif %}
+
+
+
+{% for message in messages %}
+    <div class="message">"{{ message }}"</div>
+{% endfor %}

@@ -1,0 +1,26 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <link rel="stylesheet" href="/assets/css/home.css">
+
+
+    <main class="replay">
+
+        <h1>That was nice !</h1>
+
+        <h2> {{ message }} </h2>
+
+        <div class="outro">
+            Again, you were right to trust yourself!
+            By skillful techniques, you sneak through the streets neither seen nor known, booty in hand.
+            It is a stone's throw from your home that, once the tension has dropped, a police car stops in front of you.
+            No chance for them to suspect the larceny committed but .. no certificate!
+            And that's how, just as great as you are, you end up getting embarked by the police (it's not fun with the
+            Covid in New York)!
+            But, after all, you’ll probably do better next time.
+        </div>
+
+        <a class="end btn nav-link" href="/home/restartFast">Steal Again!</a>
+
+    </main>
+{% endblock %}

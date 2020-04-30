@@ -1,0 +1,31 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <div class="gameContent">
+
+        <div class="navigation">
+            <div class="map">
+                {% include 'Game/_maps.html.twig' %}
+            </div>
+            <div class="menu">
+                {% include 'Game/_navRoom.html.twig' %}
+                <a class="btn nav-link start" href="/./home/restartFast">Redemarrer la partie</a>
+            </div>
+        </div>
+
+        <div class="art">
+
+            <div class="artCard">
+                {% include 'Game/_img.html.twig' %}
+            </div>
+
+            <div class="story">
+                {% include 'Game/_help.html.twig' %}
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}
